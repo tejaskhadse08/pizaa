@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Pizza Hut</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-T4V7GQa6MW0l7y5p6U5k6U5Jn85z7X1F3q4G7V2nRuCG5JucxPNMiwfuPFU6K5UZp1nmVRXJlLj+8IHZHfblw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        /* Internal CSS */
+        .card {
+            position: relative;
+            margin: 10px;
+            width: 200px;
+            height: 300px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .navi  a:hover{
+            background-image: url(hov.jpg);   
+        }
+
+        .navi :hover{
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row" style="margin-top: 20px;">
+        <div class="col-2"></div>
+        <div class="col-4"><img src="hut.jpg" width="155" height="30.76"></div>
+        <div class="col-6"></div>
+    </div> <br>
+
+    
+    <ul class="nav" style="border-top: 1px solid lightgrey;justify-content: center;">
+        <li class="nav-item" >
+            <a class="nav-link" href="#"></a>
+          </li>
+        <div class="navi" style="display: flex;">
+            <li class="nav-item" style="width: 200px;text-align:center;">
+                <a class="nav-link" style="color: black; border: 1px solid lightgrey; border-right: 1px solid grey;font-size: 1.07rem;" href="#"><b>Pizzas</b></a>
+              </li>
+        <li class="nav-item"  style="width: 200px;text-align:center;" >
+            <a class="nav-link" style="color: black; border: 1px solid lightgrey; border-right: 1px solid grey;font-size: 1.07rem;" href="#"><b>Sides</b></a>
+          </li>
+        <li class="nav-item"  style="width: 200px;text-align:center;">
+            <a class="nav-link" style="color: black; border: 1px solid lightgrey; border-right: 1px solid grey;font-size: 1.07rem;" href="#"><b>Desserts</b></a>
+          </li>
+        <li class="nav-item"  style="width: 200px;text-align:center;">
+            <a class="nav-link" style="color: black; border: 1px solid lightgrey; border-right: 1px solid grey;font-size: 1.07rem;" href="#"><b>Drinks</b></a>
+          </li>
+        <li class="nav-item"  style="width: 200px;text-align:center;">
+            <a class="nav-link" style="color: black; border: 1px solid lightgrey; border-right: 1px solid grey;font-size: 1.07rem;" href="#"><b>Deals</b></a>
+          </li>
+        </div>
+          <li class="nav-item">
+            <a class="nav-link" style="padding-left: 75px;" href="#" ></a>
+          </li>
+      </ul>
+
+
+    <!-- <div class="row" style="margin-top: 20px;">
+        <div class="col-2"></div>
+        <div class="col-4"><img src="hut.jpg" width="155" height="30.76"></div>
+        <div class="col-6"></div>
+    </div>
+
+    <div class="row hovimg" style="margin-top: 20px;">
+        <div class="col-1" style="border: 1px solid rgb(232, 231,231,0.911); margin-top: 10px; height: 50px;"></div>
+        <div class="col-2" style="border: 1px solid rgb(232, 231,231,0.911);">
+            <li  style="font-size:1.07rem;font-family: SharpSansSemiBold;  height: 50px; text-align: center; margin-top: 10px;padding-top:15px;">Pizzas</li>
+        </div>
+        <div class="col-2 " style="border: 1px solid rgb(232, 231,231,0.911);">
+            <li style="font-size:1.07rem;font-family: SharpSansSemiBold;  height: 50px; text-align: center;margin-top: 10px;font-size:1.07rem;font-family: SharpSansSemiBold;padding-top:15px;">Sides</li>
+        </div>
+        <div class="col-2" style="border: 1px solid rgb(232, 231,231,0.911);">
+            <li style="font-size:1.07rem;font-family: SharpSansSemiBold;  height: 50px; text-align: center; margin-top: 10px;font-size:1.07rem;font-family: SharpSansSemiBold;padding-top:15px;">Desserts</li>
+        </div>
+        <div class="col-2" style="border: 1px solid rgb(232, 231,231,0.911);">
+            <li style="font-size:1.07rem;font-family: SharpSansSemiBold; height: 50px; text-align: center; margin-top: 10px;font-size:1.07rem;font-family: SharpSansSemiBold;padding-top:15px;">Drinks</li>
+        </div>
+        <div class="col-2" style="border: 1px solid rgb(232, 231,231,0.911);">
+            <li style="font-size:1.07rem;font-family: SharpSansSemiBold;  height: 50px; text-align: center; margin-top: 10px;font-size:1.07rem;font-family: SharpSansSemiBold;padding-top:15px;">Deals</li>
+        </div>
+        <div class="col-1" style="border: 1px solid rgb(232, 231,231,0.911); margin-top: 10px; height: 50px; text-align: center"></div>
+    </div>
+
+    <style>
+       .hovimg{
+        list-style: none;
+       
+        margin: 0;
+        font: bold;
+       }
+
+       .hovimg li:hover{
+        background-image: url(hov.jpg);
+        list-style: none;
+        height: 48px;
+    
+    
+       }
+    </style> -->
+
+    <div class="container-fluid">
+        <div class="bg-image" style="background-image: url(bg.jpg);height: 100%;"> <br>
+            <h1 style="text-align: center; font-family: SharpSansSemiBold;">Our Deals</h1>
+            <p style="text-align: center; margin-top: 30px;">Check out the latest meal deals available from Pizza Hut
+            </p>
+
+            <div class="row">
+                <div class="col-2"></div>
+
+                <div class="col-2">
+                    <div class="card" style="width:230px;height: 400px;">
+                        <img class="card-img-top" src="box1.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">1 Plus 1 San Francisco Style</h4>
+                            <p class="card-text"><br> Choose from 2 of your favorite personal pizza with new San
+                                Fransisco Crust
+                            </p><br> <br>
+                            <a href="#" class="btn btn-success"
+                                style="width: 100%;justify-content: center;align-items: center ;padding-left: 10px;"><b>View
+                                    more</b></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="card" style="width:230px;height: 400px;">
+                        <img class="card-img-top" src="box2.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Super Value Deal : 2 Medium Pizzas </h4>
+                            <p class="card-text"><br> Choose any 2 of your favorite medium pizza
+                            </p><br> <br> <br>
+                            <a href="#" class="btn btn-success"
+                                style="width: 100%;justify-content: center;align-items: center ;padding-left: 10px;"><b>View
+                                    more</b></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="card" style="width:230px;height: 400px;">
+                        <img class="card-img-top" src="box3.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Flavour Fun Box of 4</h4>
+                            <p class="card-text"><br> Get 4 assorted Flavor Fun Pizzas. Perfect pizza crust topped with
+                                exciting new sauces, cheesy dressing & your favorite toppings
+                            </p>
+                            <a href="#" class="btn btn-success"
+                                style="width: 100%;justify-content: center;align-items: center ;padding-left: 10px;"><b>View
+                                    more</b></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="card" style="width:230px;height: 400px;">
+                        <img class="card-img-top" src="box4.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Super Value Deal : 2 Personal Pizzas</h4>
+                            <p class="card-text">Choose any 2 of your favorite personal pizza
+                            </p><br> <br> <br>
+                            <a href="#" class="btn btn-success"
+                                style="width: 100%;justify-content: center;align-items: center ;padding-left: 10px;"><b>View
+                                    more</b></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2"></div>
+            </div>
+            <!-- row 1 ends -->
+
+            <div class="row">
+                <div class="col-2"></div>
+
+                <div class="col-2">
+                    <div class="card" style="width:230px;height: 400px;">
+                        <img class="card-img-top" src="box5.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Super Saver Meal Combo</h4>
+                            <p class="card-text">2 Med Pizza of Choice, 1 Classic Breadstix, 1 Creamy Breadstix, 2 Pepsi
+                                Pet Bottles
+                            </p><br> <br>
+                            <a href="#" class="btn btn-success"
+                                style="width: 100%;justify-content: center;align-items: center ;padding-left: 10px;"><b>View
+                                    more</b></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="card" style="width:230px;height: 400px;">
+                        <img class="card-img-top" src="box6.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Hut Treat Box 4 San Francisco Style</h4>
+                            <p class="card-text">2 Med Pizza with new San Fransisco Crust, 1 Classic Breadstix, 1 Creamy
+                                Breadstix, 2 Pepsi Pet Bottles
+                            </p>
+                            <a href="#" class="btn btn-success"
+                                style="width: 100%;justify-content: center;align-items: center ;padding-left: 10px;"><b>View
+                                    more</b></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="card" style="width:230px;height: 400px;">
+                        <img class="card-img-top" src="box7.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Meal for 2 with Pizza & Classic Bread Stix</h4>
+                            <p class="card-text">2 Personal Pizza Upto Veg Signature, 1 Classic Bread Stix <br> <br>
+                            </p><br>
+                            <a href="#" class="btn btn-success"
+                                style="width: 100%;justify-content: center;align-items: center ;padding-left: 10px;"><b>View
+                                    more</b></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="card" style="width:230px;height: 400px;">
+                        <img class="card-img-top" src="box8.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Stuffed Crust - Meal for 2</h4>
+                            <p class="card-text">Delicious Meal for 2 with great choice of pizzas and signature crusts
+                                with Pepsi
+                            </p><br> <br> <br>
+                            <a href="#" class="btn btn-success"
+                                style="width: 100%;justify-content: center;align-items: center ;padding-left: 10px;"><b>View
+                                    more</b></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2"></div>
+            </div>
+            <!-- row 2 ends -->
+
+            <div class="row">
+                <div class="col-2"></div>
+
+                <div class="col-2">
+                    <div class="card" style="width:230px;height: 400px;">
+                        <img class="card-img-top" src="box9.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">My Box Starting</h4>
+                            <p class="card-text"><br> Meal for 1: 1 Personal Pizza, 2 Pc Plain Garlic Bread & 1 Pepsi
+                                Pet Bottle
+                            </p><br> <br> <br>
+                            <a href="#" class="btn btn-success"
+                                style="width: 100%;justify-content: center;align-items: center ;padding-left: 10px;"><b>View
+                                    more</b></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="card" style="width:230px;height: 400px;">
+                        <img class="card-img-top" src="box10.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Stuffed Crust - Meal for 2</h4>
+                            <p class="card-text">Delicious Meal for 2 with great choice of pizzas and signature crusts
+                                with Pepsi
+                            </p><br> <br> <br>
+                            <a href="#" class="btn btn-success"
+                                style="width: 100%;justify-content: center;align-items: center ;padding-left: 10px;"><b>View
+                                    more</b></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="card" style="width:230px;height: 400px;">
+                        <img class="card-img-top" src="box11.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">My Box of pizza</h4>
+                            <p class="card-text">1 Personal Pizza of choice, 2 pc Plain Garlic Bread, 1 Pepsi Pet & 1
+                                Choco Sundae cup (100 ml)
+                            </p><br> <br> <br>
+                            <a href="#" class="btn btn-success"
+                                style="width: 100%;justify-content: center;align-items: center ;padding-left: 10px;"><b>View
+                                    more</b></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="card" style="width:230px;height: 400px;">
+                        <img class="card-img-top" src="boxx.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Meal for 2 with Pizza & Classic Bread Stix</h4>
+                            <p class="card-text">2 Personal Pizza Upto Veg Signature, 1 Classic Bread Stix,
+                            </p><br> <br>
+                            <a href="#" class="btn btn-success"
+                                style="width: 100%;justify-content: center;align-items: center ;padding-left: 10px;"><b>View
+                                    more</b></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2"></div>
+            </div>
+            <!-- row 3 ends -->
+            <style>
+                .footer {
+                    background-color: black;
+                    width: 100%;
+                    height: 600px;
+                    position: relative;
+                }
+            </style>
+            <div class="footer">
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-2"><br> <br><b style="color: white;font-family: fira sans;font-size: 20px;">
+                            &nbsp;&nbsp;&nbsp; &nbsp; Order Now</b>
+                        <ul style="color: white;font-family: fira sans; list-style: none;font-size: 20px;">
+                            <li>Deals</li>
+                            <li>Pizza</li>
+                            <li>Sides</li>
+                            <li>Drinks</li>
+                            <li>Desserts</li>
+                        </ul>
+                    </div>
+                    <div class="col-2"><br> <br><b
+                            style="color: white;font-family: fira sans;font-size: 20px;">&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; About
+                            us</b>
+                        <ul style="color: white;font-family: fira sans; list-style: none;font-size: 20px;">
+                            <li>About us</li>
+                            <li>Contactless delivery</li>
+                            <li>Nutrition</li>
+                        </ul>
+                    </div>
+                    <div class="col-2"><br> <br><b
+                            style="color: white;font-family: fira sans;font-size: 20px;">&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; Our
+                            Policies</b>
+                        <ul style="color: white;font-family: fira sans; list-style: none;font-size: 20px;">
+                            <li>Terms & Conditions</li>
+                            <li>FAQs & Help</li>
+                        </ul>
+                    </div>
+                    <div class="col-2"><br> <br><b
+                            style="color: white;font-family: fira sans;font-size: 20px;">&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; Visit
+                            Pizza Hut</b>
+                        <ul style="color: white;font-family: fira sans; list-style: none;font-size: 20px;">
+                            <li>Locate a store</li>
+                            <li>Global Blog</li>
+                        </ul>
+                    </div>
+                    <div class="col-2"></div>
+                </div>
+                <!-- Download Icons-->
+                <div class="play">
+                    <div class="row">
+                        <div class="col-4"></div>
+                        <div class="col-2"><img src="app.jpg" width="200px"></div>
+                        <div class="col-2"><img src="play.jpg" width="200px"></div>
+                        <div class="col-4"></div>
+                    </div> <br> <br> <br>
+
+                    <style>
+                        .gbtn {
+                            background-color: lightgrey;
+                            color: black;
+                            cursor: pointer;
+                            border: none;
+                            border-radius: 12px;
+                            width: 150px;
+                            padding: 12px 10px;
+                            /* add padding */
+                            text-align: center;
+                            /* center text */
+                            text-decoration: none;
+                            /* remove underline */
+                            display: inline-block;
+                        }
+                    </style>
+                    <!-- styling ends -->
+                    <!-- Icons -->
+                    <div class="icons">
+                        <div class="row">
+                            <div class="col-2">
+                                <p style="color:white;">&nbsp; &nbsp; Help us in serving you better </p>
+                            </div>
+                            <div class="col-2"><button class="gbtn">
+                                    Give Feedback
+                                </button></div>
+                            <div class="col-2"></div>
+                            <div class="col-2"></div>
+                            <div class="col-2">
+                                <h4 style="color: white;font-size: 30px;text-align: center;">Follow us</h4>
+                                <i class="fa-brands fa-facebook-f"
+                                    style="color: white;font-size: 30px;">&nbsp;&nbsp;&nbsp;&nbsp;</i>
+                                <i class="fa-brands fa-twitter"
+                                    style="color: white;font-size: 30px;">&nbsp;&nbsp;&nbsp;&nbsp;</i>
+                                <i class="fa-brands fa-instagram"
+                                    style="color: white;font-size: 30px;">&nbsp;&nbsp;&nbsp;&nbsp;</i>
+                                <i class="fa-brands fa-youtube"
+                                    style="color: white;font-size: 30px;">&nbsp;&nbsp;&nbsp;</i>
+                            </div>
+                            <div class="col-2"></div>
+                            <div class="col-2"></div>
+                        </div> <br>
+                        <div class="row">
+                            <div class="col-12">
+                                <p style="color:#78838C;text-align: center;">Order a delicious pizza on the go,
+                                    anywhere, anytime. Pizza Hut is happy to assist you with your home delivery. Every
+                                    time you order, you get a hot and fresh pizza delivered at your doorstep in less
+                                    than thirty minutes. *T&C Apply. <br>
+
+                                    Hurry up and place your order now!
+                                    <br>
+                                    © 2023 Pizza Hut India. All rights reserved. License Number: 10017011004220
+                                </p>
+                            </div>
+                        </div>
+
+
+
+                        <!-- footer ends -->
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+
+</body>
